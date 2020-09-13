@@ -9,12 +9,32 @@ body {
 .dark .nav-link {
     color: #f3f2f0;
 }
+.dark .circle circle {
+    fill: #d40000;
+}
+.dark .triangle path {
+    fill: #ffffff;
+}
 .white .nav-link {
     color: #010101;
 }
 .white {
     background-color: #f3f2f0;
     color: #010101;
+}
+.white .circle circle {
+    fill: #ffffff;
+}
+.white .triangle path {
+    fill: #d40000;
+}
+.circle-main {
+    width: 253px;
+    height: 253px;
+}
+.circle-nav {
+    width: 106px;
+    height: 106px;
 }
 
 .wrapper {
@@ -36,10 +56,14 @@ header {
     display: flex;
 }
 .nav-item {
-    margin-left: 33px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 .nav-item:first-child {
-    margin: 0;
+    padding-left: 0;
+}
+.nav-item:last-child {
+    padding-right: 0;
 }
 .nav-link {
     text-decoration: none;
@@ -48,6 +72,22 @@ header {
 }
 .nav-link:hover {
     color: #d40000;
+}
+.nav-info .nav-item {
+    position: relative;
+}
+.nav-info .nav-item::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 24px;
+    background-color: rgba(243, 242, 240, 0.5);
+    position: absolute;
+    left: 0;
+    top: calc(50%-12px);
+}
+.nav-info .nav-item:first-child::before {
+    display: none;
 }
 .photo {
     margin-bottom: 120px;
@@ -84,6 +124,7 @@ header {
 .skill {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 180px;
 }
 .title-h3 {
     font-size: 16px;
@@ -97,4 +138,11 @@ header {
 }
 .skill .discription {
     line-height: 150%;
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+.about p {
+    width: 560px;
 }
