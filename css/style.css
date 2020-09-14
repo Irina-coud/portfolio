@@ -31,10 +31,23 @@ body {
 .circle-main {
     width: 253px;
     height: 253px;
+    position: absolute;
+    left: -128px;
+    top: calc(50% - 126px);
+    z-index: 1;
+}
+.triangle {
+    position: absolute;
+    left: -150px;
+    top: 0;
+    z-index: 2;
 }
 .circle-nav {
     width: 106px;
     height: 106px;
+    position: absolute;
+    right: 20px;
+    bottom: -35px;
 }
 
 .wrapper {
@@ -84,7 +97,7 @@ header {
     background-color: rgba(243, 242, 240, 0.5);
     position: absolute;
     left: 0;
-    top: calc(50%-12px);
+    top: calc(50% - 12px);
 }
 .nav-info .nav-item:first-child::before {
     display: none;
@@ -95,6 +108,16 @@ header {
 }
 .name {
     font-size: 28px;
+    position: relative;
+    z-index: 3;
+}
+.main .title-h1 {
+    position: relative;
+    z-index: 4;
+}
+
+.main {
+    position: relative;
 }
 .title-h1 {
     font-size: 74px;
@@ -139,10 +162,27 @@ header {
 .skill .discription {
     line-height: 150%;
 }
-.about {
+
+.social-item:last-child {
+    position: relative;
+}
+.steps-item {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.about p {
-    width: 560px;
+.steps-title {
+    font-size: 28px;
+    line-height: 150%;
+}
+.steps-title span {
+    margin-right: 45px;
+}
+.steps-text {
+    font-size: 16px;
+    line-height: 150%;
+}
+.section-steps {
+    padding-top: 180px;
+    padding-bottom: 198px;
 }
