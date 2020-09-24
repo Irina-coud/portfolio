@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/jquery1-ui.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -181,7 +181,7 @@
                         <div id="tabs-2">
                             <div class="work">
                                 <div class="work-item">
-                                    <h3 class="work-title">Agata Bielen</h3>
+                                    <h3 class="work-title">Lemon</h3>
                                     <ul class="work-list">
                                         <li>– верстка по макету из Figma</li>
                                         <li>– наполнение сайта контентом</li>
@@ -197,7 +197,7 @@
                             </div>
                             <div class="work">
                                 <div class="work-item">
-                                    <h3 class="work-title">Lemon</h3>
+                                    <h3 class="work-title">Agata Bielen</h3>
                                     <ul class="work-list">
                                         <li>– верстка по макету из PSD</li>
                                         <li>– доступен функционал получения заказов</li>
@@ -215,7 +215,7 @@
                         <div id="tabs-3">
                             <div class="work">
                                 <div class="work-item">
-                                    <h3 class="work-title">Agata Bielen</h3>
+                                    <h3 class="work-title">Shop</h3>
                                     <ul class="work-list">
                                         <li>– верстка по макету из Figma</li>
                                         <li>– наполнение сайта контентом</li>
@@ -371,6 +371,39 @@
                     </div>
                 </div>
             </section>
+            <section class="section-tech">
+                <div class="tech">
+                    <div class="tech-item html">
+                        <img class="tech-img" src="./img/ss/html.svg" alt="html" title="Язык гипертекстовой разметки">
+                    </div>
+                    <div class="tech-item css">
+                        <img class="tech-img" src="./img/ss/css.svg" alt="css" title="Каскадные таблицы стилей">
+                    </div>
+                    <div class="tech-item js">
+                        <img class="tech-img" src="./img/ss/Unofficial_JavaScript_logo_2 1.svg" alt="JavaScript"
+                            title="Язык программирования высокого уровня, использующийся для придания интерактивности веб-страницам">
+                    </div>
+                    <div class="tech-item jquery">
+                        <img class="tech-img" src="./img/ss/jquery.svg" alt="jquery"
+                            title="Популярная библиотека JavaScript">
+                    </div>
+                    <div class="tech-item bootstrap">
+                        <img class="tech-img" src="./img/ss/bootstrap.svg" alt="bootstrap"
+                            title="Популярный CSS фреймворк">
+                    </div>
+                    <div class="tech-item php">
+                        <img class="tech-img" src="./img/ss/php.svg" alt="php" title="Серверный язык программирования">
+                    </div>
+                    <div class="tech-item vjs">
+                        <img class="tech-img" src="./img/ss/js.svg" alt="Vuejs"
+                            title="Js-фреймворк для создания пользовательских интерфейсов">
+                    </div>
+                    <div class="tech-item wordpress">
+                        <img class="tech-img" src="./img/ss/Wordpress.svg" alt="Wordpress"
+                            title="Популярная CMS для создания блогов">
+                    </div>
+                </div>
+            </section>
         </div>
         <footer>
         </footer>
@@ -383,6 +416,14 @@
             $("#tabs").tabs({
                 active: 0
             });
+            $(document).tooltip();
+        });
+        $(".tech-image").tooltip({
+            position: {
+                my: "center top",
+                at: "center bottom-10",
+                collision: "none"
+            }
         });
     </script>
 </body>
